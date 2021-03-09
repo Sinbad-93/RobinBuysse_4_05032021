@@ -7,10 +7,86 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+footer{
+    background-color: #df874b;
+    color: black!important;
+}
+footer > div > div > div >.white,p {
+    color: black!important;
+}
+.footer_style{
+    font-size: 15px;
+    display: flex;
+    align-content: flex-end;
+    color: black!important;
+}
+.footer_style > div {
+    align-self: flex-end;
+    color: black!important;
+}
+.footer-title{
+    font-size: 24px;
+    padding: 20px;
+    color: black!important;
+}
+
+.footer_style > div > p {
+    font-size: 15px;
+    color: black!important;
+    
+}
+.social {
+    max-width: 400px;
+    margin: auto 10px auto 20px;
+    color: black!important;
+} 
+.bird{
+    margin-left: 50px;
+}
+/*-----------------PHONE----------------*/
+@media screen and (max-width : 460px){
+    footer{
+        background-color: #df874b;
+        color: black!important;
+    }
+    footer > div > div > div >.white,p {
+        color: black!important;
+    }
+    .footer_style{
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        color: black!important;
+    }
+    .footer_style > div {
+        align-self: flex-end;
+        color: black!important;
+    }
+    .footer-title{
+        font-size: 22px;
+        padding: 15px;
+        color: black!important;
+    }
+    
+    .footer_style > div > p {
+        font-size: 13px;
+        color: black!important;
+        
+    }
+    .social {
+        margin: auto;
+        padding: 10px;
+    }}
+    /*-------------------END-------*/    
+
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+}
+form .btn {
+    color: black!important;
 }
 
 a:hover {
@@ -26,7 +102,18 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
+form >div > input {
+    outline: black solid 1px;
+}
+form >div > textarea {
+    outline: black solid 1px;
+}
+form >div > textarea::placeholder {
+    font-weight: bold; 
+}
+form >div > label {
+    font-weight: bolder;
+}
 .bloc {
     width: 100%;
     clear: both;
@@ -42,6 +129,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    margin: auto;
 }
 
 .bloc-lg {
@@ -370,6 +458,17 @@ a:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
+    /*repositionner la navbar sur la page accueil*/
+    /*.put_right{
+        right: 400px;  
+    }
+    .put_right > li{
+        margin-right: 50px;  
+        list-style-type: none;
+    }
+    .put_right > li > a{
+        text-decoration: none; 
+    }*/
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -699,10 +798,7 @@ p {
     font-weight: 700;
 }
 
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
-}
+
 
 h2 {
     font-size: 22px;
@@ -716,6 +812,13 @@ h2 {
 #bloc-5-cta > div > div > h2 {
     background-color: #000000;
     border-radius: 20px;
+}
+
+#bloc-6 > div > div > div > p {
+    background-color: #000000;
+    border-radius: 20px;
+    font-size: 30px;
+    max-width: 100%;
 }
 
 h3 {
@@ -735,6 +838,7 @@ h1 {
     color: #333333!important;
     background-color: black;
     border-radius: 20px;
+    text-align: center;
 }
 
 h4 {
@@ -791,7 +895,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: blac!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1016,6 +1120,8 @@ h4 {
     form {
         padding: 5px;
     }
+  
+
     .close-lightbox {
         display: inline-block;
     }
