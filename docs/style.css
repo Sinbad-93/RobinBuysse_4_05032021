@@ -817,6 +817,7 @@ h2 {
     border-radius: 20px;
     width: 50%;
     margin: auto;
+    filter: brightness(1.0);
 }
 
 #bloc-6 > div > div > div > p {
@@ -934,7 +935,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.png");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
